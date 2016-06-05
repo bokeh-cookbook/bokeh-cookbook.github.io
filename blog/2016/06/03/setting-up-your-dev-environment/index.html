@@ -1037,35 +1037,75 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-</style>b'\n<div class="cell border-box-sizing text_cell rendered">\n<div class="prompt input_prompt">\n</div>\n<div class="inner_cell">\n<div class="text_cell_render border-box-sizing rendered_html">\n<p>At the Pycon 2016 sprints, there were a bunch of folks who wanted to sprint on Bokeh and so needed to setup a development environment.</p>\n<p><a href="https://github.com/ericmjl">Eric Ma</a> put together this script to help people get started. (I tweaked it slightly).</p>\n</div>\n</div>\n</div>\n<div class="cell border-box-sizing text_cell rendered">\n<div class="prompt input_prompt">\n</div>\n<div class="inner_cell">\n<div class="text_cell_render border-box-sizing rendered_html">\n<pre><code># A script that gets new contributors up and running asap.\n# \n# Author: Eric J. Ma, MIT, github: @ericmjl\n# Help from:\n# - Andrea Grant, Univ. Minnesota, github: @andreagrant\n# - Michael Gilbert, github: @zyell\n# \n# Written during the PyCon 2016 Sprints.\n# \n# Purpose: The script creates a new conda environment called \n# "bokehdev", activates it, installs all dependencies as determined by\n# going through the documentation page and manually checking,\n# and executes the commands in order. We wrote this script because\n# we ourselves were going through some trouble getting setup, and\n# want to save others their time.\n# \n#! /usr/bin/sh\n\ncd ..\nconda create -n "bokehdev" python=3.5\nsource activate bokehdev\ncd bokehjs\n\n# Install bokeh and node.js & dependencies.\nconda install -y bokeh nodejs jupyter flexx nbformat\n\n# Then remove bokeh so that we can re-install in development mode.\nconda remove bokeh -y\nnpm install\ncd ..\npython setup.py develop --build-js\nconda install -y flask matplotlib docutils pygments pyyaml seaborn sphinx yaml patsy statsmodels pytest\npip install --upgrade pip\npip install brewer2mpl graphviz\npip install ggplot sphinxcontrib-httpdomain\npip install beautifulsoup4 colorama pytest pytest-cov pytest-selenium mock websocket-client</code></pre>\n</div>\n</div>\n</div>\n<div class="cell border-box-sizing text_cell rendered">\n<div class="prompt input_prompt">\n</div>\n<div class="inner_cell">\n<div class="text_cell_render border-box-sizing rendered_html">\n<p>To then run the docs.</p>\n<pre><code>#! /usr/bin/sh\ncd sphinx\nexport BOKEH_DOCS_CDN="local"\nmake all\nmake serve</code></pre>\n</div>\n</div>\n</div>\n<div class="cell border-box-sizing text_cell rendered">\n<div class="prompt input_prompt">\n</div>\n<div class="inner_cell">\n<div class="text_cell_render border-box-sizing rendered_html">\n</div>\n</div>\n</div>\n<div class="cell border-box-sizing code_cell rendered">\n<div class="input">\n<div class="prompt input_prompt">In\xc2\xa0[\xc2\xa0]:</div>\n<div class="inner_cell">\n<div class="input_area">\n<div class=" highlight hl-ipython3"><pre><span></span> \n</pre></div>\n</div>\n</div>\n</div>\n</div>'
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: 'center'," +
-        "    displayIndent: '0em'," +
-        "    showMathMenu: true," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['$','$'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-        "    } " +
-        "}); ";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+</style>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At the Pycon 2016 sprints, there were a bunch of folks who wanted to sprint on Bokeh and so needed to setup a development environment.</p>
+<p><a href="https://github.com/ericmjl">Eric Ma</a> put together this script to help people get started. (I tweaked it slightly).</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<pre><code># A script that gets new contributors up and running asap.
+# 
+# Author: Eric J. Ma, MIT, github: @ericmjl
+# Help from:
+# - Andrea Grant, Univ. Minnesota, github: @andreagrant
+# - Michael Gilbert, github: @zyell
+# 
+# Written during the PyCon 2016 Sprints.
+# 
+# Purpose: The script creates a new conda environment called 
+# "bokehdev", activates it, installs all dependencies as determined by
+# going through the documentation page and manually checking,
+# and executes the commands in order. We wrote this script because
+# we ourselves were going through some trouble getting setup, and
+# want to save others their time.
+# 
+#! /usr/bin/sh
 
+cd ..
+conda create -n "bokehdev" python=3.5
+source activate bokehdev
+cd bokehjs
+
+# Install bokeh and node.js &amp; dependencies.
+conda install -y bokeh nodejs jupyter flexx nbformat
+
+# Then remove bokeh so that we can re-install in development mode.
+conda remove bokeh -y
+npm install
+cd ..
+python setup.py develop --build-js
+conda install -y flask matplotlib docutils pygments pyyaml seaborn sphinx yaml patsy statsmodels pytest
+pip install --upgrade pip
+pip install brewer2mpl graphviz
+pip install ggplot sphinxcontrib-httpdomain
+pip install beautifulsoup4 colorama pytest pytest-cov pytest-selenium mock websocket-client</code></pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To then run the docs.</p>
+<pre><code>#! /usr/bin/sh
+cd sphinx
+export BOKEH_DOCS_CDN="local"
+make all
+make serve</code></pre>
+</div>
+</div>
+</div>
 
             </div>
 
