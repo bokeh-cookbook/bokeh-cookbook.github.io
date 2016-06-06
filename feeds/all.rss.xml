@@ -976,7 +976,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Bokeh has a few examples up in the &lt;a href="http://bokeh.pydata.org/en/latest/docs/gallery.html"&gt;bokeh gallery&lt;/a&gt;, but there's a rich, and somewhat hidden, resource - the bokeh examples directory.&lt;/p&gt;
+&lt;p&gt;Bokeh has a few examples up in the bokeh gallery, but there's a rich, and somewhat hidden, resource - the bokeh examples directory.&lt;/p&gt;
 &lt;p&gt;Here we'll look at how to run and play with the bokeh examples.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2161,7 +2161,7 @@ $ python setup.py develop --build-js
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ py.test -m js
 &lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;With js pacakges&lt;/li&gt;
+&lt;li&gt;With js packages&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; bokehjs
 $ ./node_modules/gulp/bin/gulp.js &lt;span class="nb"&gt;test&lt;/span&gt;
