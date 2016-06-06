@@ -43,16 +43,17 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href=".">Home</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="./pages/overview">Overview</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="./archives">Blog</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="./archives">Archive</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="./tags">Tags</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="./pages/examples">Examples</a></li>
         </ul>
       </div>
     </nav>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<div class="container">
+  <div class="container">
+    <section id="content">
     <section class="site-header">
       <div><h2 class="title">Bokeh Cookbook</h2></div>
     </section>
@@ -60,12 +61,20 @@
     <section class="home-section">
         <div class="row">
           <ul>
+                  <p>I've been working as a core developer of bokeh for a while, and sometimes I want to throw an example of
+how to use bokeh online without having to consider whether I'm going to maintain that code in the future.
+I started bokeh-cookbook during Pycon 2016 sprints as I realized that there were holes in our install
+guide if you've never used conda or committed to an open source project before. We'll see how long it lasts...
+<span style="float: right; margin-top: 5px"><a href="https://github.com/birdsarah">Sarah Bird</a></span>
+<br /></p>
+<p><strong>Check the version tag on posts to know whether that post is relevant to the version of bokeh that 
+you're using.</strong></p>
           </ul>
         </div>
     </section>
 
     <section class="home-section">
-      <h3 class="home-header">Recent blog posts</h3>
+      <h3 class="home-header">Recent posts</h3>
       <article class="home-post">
         <header>
           <time datetime="" title="2016-06-05T00:00:00+00:00" pubdate style="float:right" class="blogpost-date">Sun 05 June 2016</time>
@@ -85,7 +94,7 @@
 <p>Bokeh has a few examples up in the <a href="http://bokeh.pydata.org/en/latest/docs/gallery.html">bokeh gallery</a>
 
           <div>
-            <a class="button button-primary button-read" href="./blog/2016/06/05/running-bokeh-examples/">Read</a>
+            <a class="button button-default button-read" href="./blog/2016/06/05/running-bokeh-examples/">Read</a>
           </div>
 
         </div>
@@ -117,7 +126,7 @@
 <p>At the Pycon 2016 sprints, there were a bunch of folks who wanted to sprint on Bokeh and so needed to setup a development environment.</p>
 
           <div>
-            <a class="button button-primary button-read" href="./blog/2016/06/05/setting-up-your-dev-environment/">Read</a>
+            <a class="button button-default button-read" href="./blog/2016/06/05/setting-up-your-dev-environment/">Read</a>
           </div>
 
         </div>
@@ -130,10 +139,8 @@
 
       </article>
       <div class="separator"></div>
-
-
-</div>
-
+    </section>
+  </div>
 
 <br>
 
