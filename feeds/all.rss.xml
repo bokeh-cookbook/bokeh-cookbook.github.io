@@ -2158,8 +2158,10 @@ $ python setup.py develop --build-js
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="Running-the-tests"&gt;Running the tests&lt;a class="anchor-link" href="#Running-the-tests"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bokeh has lots of tests. Some of them are not that easy or necessary to run locally, so it's good to be specific.&lt;/p&gt;
 &lt;p&gt;To run the python unit tests:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ py.test -m &lt;span class="s1"&gt;'not (integration or js or examples)'&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;ulimit&lt;/span&gt; -n 1024
+$ py.test -m &lt;span class="s1"&gt;'not (integration or js or examples)'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(The &lt;code&gt;ulimit&lt;/code&gt; step is because some of our tests open a lot of files to test the server and this makes it work - we should probably add this into our test suite somehow)&lt;/p&gt;
 &lt;p&gt;To run the javascript unit tests you have two options - directly with the javascript packages or through py.test.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Through py.test&lt;/li&gt;
