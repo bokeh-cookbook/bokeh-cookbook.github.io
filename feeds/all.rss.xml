@@ -1030,7 +1030,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Download-a-pre-made-zip"&gt;Download a pre-made zip&lt;a class="anchor-link" href="#Download-a-pre-made-zip"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I have made zip files of the examples for recent releases of bokeh - you can get them on &lt;a href="/pages/examples/"&gt;the examples page&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="Download-a-pre-made-zip"&gt;Download a pre-made zip&lt;a class="anchor-link" href="#Download-a-pre-made-zip"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I have made zip files of the examples for recent releases of bokeh:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assets/examples-0.11.1.zip"&gt;0.11.1 Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/assets/examples-0.11.0.zip"&gt;0.11.0 Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/assets/examples-0.10.0.zip"&gt;0.10.0 Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will keep adding new ones on &lt;a href="/pages/examples/"&gt;the examples page&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
