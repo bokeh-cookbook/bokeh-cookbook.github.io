@@ -1071,7 +1071,6 @@ h6:hover .anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Set-up-your-development-conda-environment">Set-up your development conda environment<a class="anchor-link" href="#Set-up-your-development-conda-environment">¶</a></h3><p>This is like a virtualenv if you're familiar with them. We create a conda environment called bokeh-dev and we install python 3.4 in it (we use python 3.4 because there are a number of dependencies for bokeh that don't have python 3.5 versions built yet).</p>
 <pre><code>$ conda create -n bokeh-dev python=3.4
-
 </code></pre>
 <p>Now we activate the environment:</p>
 <pre><code>$ source activate bokeh-dev</code></pre>
@@ -1167,7 +1166,7 @@ $ python setup.py develop --build-js
 <div class="highlight"><pre><span></span>$ py.test -m js
 </pre></div>
 <ul>
-<li>With js pacakgess</li>
+<li>With js pacakges</li>
 </ul>
 <div class="highlight"><pre><span></span>$ <span class="nb">cd</span> bokehjs
 $ ./node_modules/gulp/bin/gulp.js <span class="nb">test</span>

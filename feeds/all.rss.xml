@@ -1030,7 +1030,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Download-a-pre-made-zip"&gt;Download a pre-made zip&lt;a class="anchor-link" href="#Download-a-pre-made-zip"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;coming soon&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="Download-a-pre-made-zip"&gt;Download a pre-made zip&lt;a class="anchor-link" href="#Download-a-pre-made-zip"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I have made zip files of the examples for recent releases of bokeh - you can get them on &lt;a href="/pages/examples/"&gt;the examples page&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1043,7 +1043,7 @@ h6:hover .anchor-link {
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;bokeh&lt;span class="o"&gt;)&lt;/span&gt;➜  pages git:&lt;span class="o"&gt;(&lt;/span&gt;master&lt;span class="o"&gt;)&lt;/span&gt; ✗ which bokeh
 /Users/birdsarah/miniconda3/envs/bokeh/bin/bokeh
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Next go to the directory one above bin. In my case that's &lt;code&gt;/Users/birdsarah/miniconda3/envs/bokeh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Next go to the directory one above bin. In my case that's:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /Users/birdsarah/miniconda3/envs/bokeh
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In that directory you should find a directory called &lt;code&gt;Examples&lt;/code&gt;. This is where all the bokeh examples live.&lt;/p&gt;
@@ -2066,7 +2066,6 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="Set-up-your-development-conda-environment"&gt;Set-up your development conda environment&lt;a class="anchor-link" href="#Set-up-your-development-conda-environment"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is like a virtualenv if you're familiar with them. We create a conda environment called bokeh-dev and we install python 3.4 in it (we use python 3.4 because there are a number of dependencies for bokeh that don't have python 3.5 versions built yet).&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ conda create -n bokeh-dev python=3.4
-
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now we activate the environment:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ source activate bokeh-dev&lt;/code&gt;&lt;/pre&gt;
@@ -2162,7 +2161,7 @@ $ python setup.py develop --build-js
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ py.test -m js
 &lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;With js pacakgess&lt;/li&gt;
+&lt;li&gt;With js pacakges&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; bokehjs
 $ ./node_modules/gulp/bin/gulp.js &lt;span class="nb"&gt;test&lt;/span&gt;
